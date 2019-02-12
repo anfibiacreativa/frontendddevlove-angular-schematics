@@ -1,0 +1,19 @@
+// common core styles
+
+@import './variables';
+
+// some core stuff
+
+body {
+  h1 {
+    color: $c-red;
+
+    &:after {
+      content: ' Sparking joy!';
+    }
+  }
+  h2 a:link,
+  h2 a:visited {
+    color: $c-green;
+  }
+}

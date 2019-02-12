@@ -1,0 +1,17 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "aliased-sass": {
+      "description": "Generates an Angular project featuring a global aliased SASS import that proxies app-wide SASS utilities",
+      "factory": "./aliased-sass/index#aliasedSass",
+      "aliases": [ "asass" ],
+      "schema": "./aliased-sass/schema.json"
+    },
+    "generate-files": {
+      "description": "Generates a set of sass files with our desired structure",
+      "factory": "./generate-files/index#generateFiles",
+      "aliases": [ "gfiles" ],
+      "schema": "./generate-files/schema.json"
+    }
+  }
+}
